@@ -4,16 +4,16 @@ A Finance degree holder, Steve, who wanted to assist his parents make the right 
 
 ### Purpose
 
-In this project, the existing VBA code that was created by steve to help determine which green energy stock his parents should invest in will be refactored. Refactoring the code will allow the VBA Macro to run more efficiently. That is, it will be able to run thousands of stocks while using just a short time to execute. The goal here is to make it possible to expand the dataset to include the entire stock market over the last few years while running in a short amount of time.  
+In this project, the existing VBA code that was created by Steve to help determine which green energy stock his parents should invest in will be refactored. Refactoring the code will allow the VBA Macro to run more efficiently. That is, it will be able to run thousands of stocks while using just a short time to execute. The goal here is to make it possible to expand the dataset to include the entire stock market over the last few years while running in a short amount of time.  
 
 
 ## Results
 
-In performing this analysis, three new output arrays "tickerVolumes", "tickerStartingPrices", and "tickerEndingPrices" were created. A variable "tickerIndex" was also created and set to zero before iterating over all the rows.The tickerIndex was used to get access to the correct index of the new three arrays created as well as the "tickers" array.
+In performing this analysis, three new output arrays "tickerVolumes", "tickerStartingPrices", and "tickerEndingPrices" were created. A variable "tickerIndex" was also created and set to 0 before iterating over all the rows.The tickerIndex was used to get access to the correct index of the new three arrays created as well as the "tickers" array.
 
-A loop was created to initialize tickersVolume to 0. Another loop was created to loop over all the rows in the spreadsheet. Within this second loop, using the tickerIndex as index, a script was created that increased the current "tickerVolumes" and added the ticker volume for the current stock ticker.
+A loop was created to initialize tickersVolumes to 0. Another loop was created to loop over all the rows in the spreadsheet. Within this second loop, using the tickerIndex as index, a script was created that increased the current "tickerVolumes" and added the ticker volume for the current stock ticker.
 
-An if-then statement was created to check whether the current row is the first row with the selected tickerIndex.If it is, the current starting price is assigned to the tickerStartingPrices variable. Another if-then statement was created to check whhether the current row is the last row with the selected tickerIndex.If it is, the current closinging price is assigned to the tickerEndingPrices variable.
+An if-then statement was created to check whether the current row is the first row with the selected tickerIndex. If it is, the current starting price is assigned to the tickerStartingPrices variable. Another if-then statement was created to check whether the current row is the last row with the selected tickerIndex. If it is, the current closing price is assigned to the tickerEndingPrices variable.
 
 A new script was created that increases the tickerIndex if the next row's ticker does not match the previous row's ticker. A for loop was used to loop through the four arrays to obtain "Ticker", "Total Daily Volume', and "Return" columns in the worksheet. The code was run and the stock analysis outputs were the same as it was before being refactored. 
 
