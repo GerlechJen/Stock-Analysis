@@ -4,7 +4,7 @@ A Finance degree holder, Steve, who wanted to assist his parents make the right 
 
 ### Purpose
 
-In this project, the existing VBA code that was created by Steve to help determine which green energy stock his parents should invest in will be refactored. Refactoring the code will allow the VBA Macro to run more efficiently. That is, it will be able to run thousands of stocks while using just a short time to execute. The goal here is to make it possible to expand the dataset to include the entire stock market over the last few years while running in a short amount of time.  
+In this project, the existing VBA code that was created by Steve to help determine which green energy stock his parents should invest in will be refactored. Refactoring the code will allow the VBA Macro to run more efficiently. That is, it will be able to run thousands of stocks while using just a short time to execute. The goal here is to make it possible to expand the dataset to include the entire stock market over the last few years while running the code in a short amount of time.  
 
 
 ## Results
