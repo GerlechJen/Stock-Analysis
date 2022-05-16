@@ -24,9 +24,9 @@ From the analysis of the results obtained, the overall stock performance of the 
 
 ![2018_analysis](https://user-images.githubusercontent.com/102351522/168691955-5f90f1b0-847b-4eb9-a941-61db255c16c7.png)
 
-As it can be seen from the above images, the year 2017 had just one stock (TERP) having a negative return while the year 2018 had just two stocks (ENPH and RUN) having a positive return. 
+As it can be seen from the above images, the year 2017 had just one stock (TERP) having a negative return while the year 2018 had only two stocks (ENPH and RUN) having a positive return. 
 
-When it comes to run time, the original code Steve created took about 0.96 seconds to run for the year 2017 and about 0.89 seconds to run for the year 2018. After refactoring, the code runtime reduced to 0.1875 seconds for 2017 and 0.15625 seconds for 2018 as shown in the images below.
+When it comes to runtime, the original code Steve created took about 0.96 seconds to execute for the year 2017 and about 0.89 seconds to execute for the year 2018. After refactoring, the code runtime reduced to 0.1875 seconds for 2017 and 0.15625 seconds for 2018 as shown in the images below.
 
 ![2017image](https://github.com/GerlechJen/stock-analysis/blob/main/RESOURCES/VBA_Challenge_2017.png)
 
@@ -37,16 +37,16 @@ Refactoring code has a lot of advantages. Some of the advantages include:
 - It improves the logic of the code and makes the code easier to read and understand.
 - It makes the code use less memory hence the code runs faster .
 - It makes the code reusable.
-- It makes debugging a little more smoother 
+- It makes debugging a little more smoother.
 - It helps to improve the functionality of the code without adding any new functionality.
 - It makes the code more organized and reliable.
 
-When it comes to disadvantages, if not carefully executed, refactoring could introduce new bugs or errors into the existing code which can affect the functionality of the code. Also, refactoring can be time-consuming.
+When it comes to its disadvantages, if not carefully executed, refactoring could introduce new bugs or errors into the existing code which can affect the functionality of the code. Also, refactoring can be time-consuming.
 
 The pros and cons mentioned above apply to the refactoring performed on the original code for this project. The refactored code is easier to read and understand. Also, when the code had not been refactored, the runtime for the 2017 analysis was about 0.96 seconds and that of 2018 was about 0.89 seconds. However, after refactoring, the code runtime reduced to about 0.19 seconds for 2017 and 0.16 seconds for 2018.
 
-Furthermore, after refactoring the code, if thousands of stock data for other years are to be included in the Excel file, the code will still run efficiently. Although the initial code worked for the analysis of the two years and will work even if we had a dozen years' stock data, it might not run as well. Should we try to analyze thousands of stock data using the old code, even if it will run it would take a very long time to execute the code.
+Furthermore, after refactoring the code, should thousands of stock data for other years be included in the Excel file, the code will still run efficiently. Although the initial code worked for the analysis of the two years and will work even if we had a dozen years' stock data, it might not run as well. Should we try to analyze thousands of stock data using the old code, even if it will run it would take a very long time to execute the code.
 
-Another thing that was observed was that, for the initial starting code when a year is run, the formatting applied to colour the cells based on whether the return was positive or negative does not work automatically on the next year analysed. For the next year analysed to have a correct colour formatting, the formatAllStocksAnalysisTable() Macro has to be run again for the correct colours to be applied. When it comes to the refactored code, the functionality was greatly improved. When different years are analyzed using the refactored code, the colour formatting works perfectly for any year analyzed without having to re-run the formatAllStocksAnalysisTable() Macro.
+Another thing that was observed was that, for the initial starting code when a year is run, the formatting applied to colour the cells based on whether the return was positive or negative does not work automatically on the next year analyzed. For the next year analyzed to have a correct colour formatting, the formatAllStocksAnalysisTable() Macro had to be run again for the correct colours to be applied. When it comes to the refactored code, the functionality was greatly improved. When different years were analyzed using the refactored code, the colour formatting worked perfectly for any year analyzed without having to re-run the formatAllStocksAnalysisTable() Macro.
 
-To address the disadvantages of refactoring mentioned earlier, while refactoring the existing code, I took time and also tested the code often to make sure it was working as expected before moving on to the next step and this resulted in an accurate refactored code.
+To address the disadvantages of refactoring mentioned earlier, while refactoring the existing code for this project, I took time and also tested the code often to make sure it was working as expected before moving on to the next step and this resulted in an accurate refactored code.
