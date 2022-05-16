@@ -13,7 +13,7 @@ In performing this analysis, three new output arrays "tickerVolumes", "tickerSta
 
 A loop was created to initialize tickersVolumes to 0. Another loop was created to loop over all the rows in the spreadsheet. Within this second loop, using the tickerIndex as index, a script was created that increased the current "tickerVolumes" and added the ticker volume for the current stock ticker.
 
-An if-then statement was created to check whether the current row is the first row with the selected tickerIndex. If it was, the current starting price was assigned to the tickerStartingPrices variable. Another if-then statement was created to check whether the current row is the last row with the selected tickerIndex. If it was, the current closing price was assigned to the tickerEndingPrices variable.
+An if-then statement was created to check whether the current row was the first row with the selected tickerIndex. If it was, the current starting price was assigned to the tickerStartingPrices variable. Another if-then statement was created to check whether the current row was the last row with the selected tickerIndex. If it was, the current closing price was assigned to the tickerEndingPrices variable.
 
 A new script was created that increases the tickerIndex if the next row's ticker does not match the previous row's ticker. A for loop was used to loop through the four arrays to obtain "Ticker", "Total Daily Volume', and "Return" columns in the worksheet. The code was run and the stock analysis outputs were the same as it was before being refactored. 
 
