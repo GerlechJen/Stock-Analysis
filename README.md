@@ -13,15 +13,9 @@ In performing this analysis, three new output arrays "tickerVolumes", "tickerSta
 
 A loop was created to initialize tickersVolume to 0. Another loop was created to loop over all the rows in the spreadsheet. Within this second loop, using the tickerIndex as index, a script was created that increased the current "tickerVolumes" and added the ticker volume for the current stock ticker.
 
-An if-then statement was created to check whether the current row is the first row with the selected tickerIndex.If it is, the current starting price is assigned to the tickerStartingPrices variable. 
+An if-then statement was created to check whether the current row is the first row with the selected tickerIndex.If it is, the current starting price is assigned to the tickerStartingPrices variable. Another if-then statement was created to check whhether the current row is the last row with the selected tickerIndex.If it is, the current closinging price is assigned to the tickerEndingPrices variable.
 
-Another if-then statement was created to check whhether the current row is the last row with the selected tickerIndex.If it is, the current closinging price is assigned to the tickerEndingPrices variable.
-
-A new script was created that increases the tickerIndex if the next row's ticker does not match the previous row's ticker.
-
-A for loop was used to loop through the four arrays to obtain "Ticker", "Total Daily Volume', and "Return" columns in the worksheet. 
-
-The code was run and the stock analysis outputs were the same as it was before being refactored. 
+A new script was created that increases the tickerIndex if the next row's ticker does not match the previous row's ticker. A for loop was used to loop through the four arrays to obtain "Ticker", "Total Daily Volume', and "Return" columns in the worksheet. The code was run and the stock analysis outputs were the same as it was before being refactored. 
 
 From the analysis of the results obtained, the overall stock performance of the year 2017 was far better than the performance for 2018. 
 
@@ -32,9 +26,7 @@ From the analysis of the results obtained, the overall stock performance of the 
 
 As it can be seen from the above images, the year 2017 had just one stock (TERP) having a negative return while the year 2018 had just two stocks (ENPH and RUN) having a positive return. 
 
-When it comes to run time, the original code Steve created took about 0.96 seconds to run for the year 2017 and about 0.89 seconds to run for the year 2018.
-
-After refactoring, the code runtime reduced to 0.1875 seconds for 2017 and 0.15625 seconds for 2018 as shown in the images below.
+When it comes to run time, the original code Steve created took about 0.96 seconds to run for the year 2017 and about 0.89 seconds to run for the year 2018. After refactoring, the code runtime reduced to 0.1875 seconds for 2017 and 0.15625 seconds for 2018 as shown in the images below.
 
 ![2017image](https://github.com/GerlechJen/stock-analysis/blob/main/RESOURCES/VBA_Challenge_2017.png)
 
