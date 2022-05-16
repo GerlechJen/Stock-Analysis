@@ -1,6 +1,6 @@
 # Stock Analysis with VBA
 ## Overview of Project 
-A Finance degree holder, Steve, who wanted to assist his parents make the right decision regarding which  green energy stock to invest in used VBA for his analysis. His parents without much research, had decided to invest all their money in DAQO New Energy Corp stock. An Excel file that contained a handful of green energy stock data including that of DAQO New Energy Corp was analyzed by steve. He used the extension to excel, VBA, for his analysis so that the analysis could be automated and reused with any stock data. After his analysis, the result was that DAQO New Energy Corp had a return of approximately 200% in 2017 but in 2018 its return dropped to -63%.
+A Finance degree holder, Steve, who wanted to assist his parents make the right decision regarding which  green energy stock to invest in, decided to use VBA for his analysis. His parents without much research, had decided to invest all their money in DAQO New Energy Corp stock. An Excel file that contained a handful of green energy stock data including that of DAQO New Energy Corp was analyzed by steve. He used the extension to excel, VBA, for his analysis so that the analysis could be automated and reused with any stock data. After his analysis, the result was that DAQO New Energy Corp had a return of approximately 200% in 2017 but in 2018 its return dropped to -63%.
 
 ### Purpose
 
