@@ -9,7 +9,7 @@ In this project, the existing VBA code that was created by Steve to help determi
 
 ## Results
 
-In performing this analysis, three new output arrays "tickerVolumes", "tickerStartingPrices", and "tickerEndingPrices" were created. A variable "tickerIndex" was also created and set to 0 before iterating over all the rows.The tickerIndex was used to get access to the correct index of the new three arrays created as well as the "tickers" array.
+In performing this analysis, three new output arrays "tickerVolumes", "tickerStartingPrices", and "tickerEndingPrices" were created. A variable "tickerIndex" was also created and set to 0 before iterating over all the rows.The tickerIndex was used to get access to the correct index of the new three arrays created, as well as, the "tickers" array.
 
 A loop was created to initialize tickersVolumes to 0. Another loop was created to loop over all the rows in the spreadsheet. Within this second loop, using the tickerIndex as index, a script was created that increased the current "tickerVolumes" and added the ticker volume for the current stock ticker.
 
