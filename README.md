@@ -15,7 +15,7 @@ A loop was created to initialize tickersVolumes to 0. Another loop was created t
 
 An if-then statement was created to check whether the current row was the first row with the selected tickerIndex. If it was, the current starting price was assigned to the tickerStartingPrices variable. Another if-then statement was created to check whether the current row was the last row with the selected tickerIndex. If it was, the current closing price was assigned to the tickerEndingPrices variable.
 
-A new script was created that increases the tickerIndex if the next row's ticker does not match the previous row's ticker. A for loop was used to loop through the four arrays to obtain "Ticker", "Total Daily Volume', and "Return" columns in the worksheet. The code was run and the stock analysis outputs were the same as it was before being refactored. 
+A new script was created that increases the tickerIndex if the next row's ticker does not match the previous row's ticker. A for loop was used to loop through the four arrays to obtain "Ticker", "Total Daily Volume', and "Return" columns in the worksheet. The final code was run and the stock analysis outputs were the same as it was before being refactored. 
 
 From the analysis of the results obtained, the overall stock performance of the year 2017 was far better than the performance for 2018. 
 
@@ -45,8 +45,8 @@ When it comes to its disadvantages, if not carefully executed, refactoring could
 
 The pros and cons mentioned above apply to the refactoring performed on the original code for this project. The refactored code is easier to read and understand. Also, when the code had not been refactored, the runtime for the 2017 analysis was about 0.96 seconds and that of 2018 was about 0.89 seconds. However, after refactoring, the code runtime reduced to about 0.19 seconds for 2017 and 0.16 seconds for 2018.
 
-Furthermore, after refactoring the code, should thousands of stock data for other years be included in the Excel file, the code will still run efficiently. Although the initial code worked for the analysis of the two years and will work even if we had a dozen years' stock data, it might not run as well. Should we try to analyze thousands of stock data using the old code, even if it will run it would take a very long time to execute the code.
+Furthermore, after refactoring the code, should thousands of stock data for other years be included in the Excel file, the code will still be usable and will run efficiently. Although the initial code worked for the analysis of the two years and will work even if we had a dozen years' stock data, it might not run very well. Should we try to analyze thousands of stock data using the old code, even if it runs, it would take a very long time to execute.
 
-Another thing that was observed was that, for the initial starting code when a year is run, the formatting applied to colour the cells based on whether the return was positive or negative does not work automatically on the next year analyzed. For the next year analyzed to have a correct colour formatting, the formatAllStocksAnalysisTable() Macro had to be run again for the correct colours to be applied. When it comes to the refactored code, the functionality was greatly improved. When different years were analyzed using the refactored code, the colour formatting worked perfectly for any year analyzed without having to re-run the formatAllStocksAnalysisTable() Macro.
+Another thing that was observed was that, the functionality of the code was not changed at all but rather enhanced. The new refactored code looked more organized as well.
 
 To address the disadvantages of refactoring mentioned earlier, while refactoring the existing code for this project, I took time and also tested the code often to make sure it was working as expected before moving on to the next step and this resulted in an accurate refactored code.
