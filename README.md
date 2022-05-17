@@ -49,4 +49,4 @@ Furthermore, after refactoring the code, should thousands of stock data for othe
 
 Another thing that was observed was that, the functionality of the code was not changed at all but rather enhanced. The new refactored code looked more organized as well.
 
-To address the disadvantages of refactoring mentioned earlier, while refactoring the existing code for this project, I took time and also tested the code often to make sure it was working as expected before moving on to the next step and this resulted in an accurate refactored code.
+To address the disadvantages of refactoring mentioned earlier, while refactoring the existing code for this project, I took time and also tested the code often to make sure it was working as expected before moving on to the next step and this resulted in an accurate refactored code with no bugs.
